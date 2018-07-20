@@ -33,26 +33,48 @@ class FetchData extends React.Component<WeatherForecastProps, {}> {
     }
 
     private renderForecastsTable() {
-        return <table className='table'>
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Temp. (C)</th>
-                    <th>Temp. (F)</th>
-                    <th>Summary</th>
-                </tr>
-            </thead>
-            <tbody>
-            {this.props.forecasts.map(forecast =>
-                <tr key={ forecast.dateFormatted }>
-                    <td>{ forecast.dateFormatted }</td>
-                    <td>{ forecast.temperatureC }</td>
-                    <td>{ forecast.temperatureF }</td>
-                    <td>{ forecast.summary }</td>
-                </tr>
-            )}
-            </tbody>
-        </table>;
+        return (<div>
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <h1 className="page-header">
+                                Table
+                                            <small> Weather forecast</small>
+                            </h1>
+                            <ol className="breadcrumb">
+                                <li>
+                                    <i className="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
+                                </li>
+                                <li className="active">
+                                    <i className="fa fa-file"></i> Blank Page
+                                        </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <table className='table'>
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Temp. (C)</th>
+                                        <th>Temp. (F)</th>
+                                        <th>Summary</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {this.props.forecasts.map(forecast =>
+                                        <tr key={forecast.dateFormatted}>
+                                            <td>{forecast.dateFormatted}</td>
+                                            <td>{forecast.temperatureC}</td>
+                                            <td>{forecast.temperatureF}</td>
+                                            <td>{forecast.summary}</td>
+                                        </tr>
+                                    )}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+            </div>);
     }
 
     private renderPagination() {
