@@ -20,6 +20,67 @@
     <Content Remove="ClientApp\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\dist\sb-admin\css\.DS_Store" />
+    <None Include="wwwroot\dist\sb-admin\css\plugins\.DS_Store" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\less\bordered-pulled.less" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\less\core.less" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\less\fixed-width.less" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\less\font-awesome.less" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\less\icons.less" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\less\larger.less" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\less\list.less" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\less\mixins.less" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\less\path.less" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\less\rotated-flipped.less" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\less\spinning.less" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\less\stacked.less" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\less\variables.less" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\scss\font-awesome.scss" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\scss\_bordered-pulled.scss" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\scss\_core.scss" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\scss\_fixed-width.scss" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\scss\_icons.scss" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\scss\_larger.scss" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\scss\_list.scss" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\scss\_mixins.scss" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\scss\_path.scss" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\scss\_rotated-flipped.scss" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\scss\_spinning.scss" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\scss\_stacked.scss" />
+    <None Include="wwwroot\dist\sb-admin\font-awesome\scss\_variables.scss" />
+    <None Include="wwwroot\dist\sb-admin\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\dist\sb-admin\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\dist\sb-admin\js\.DS_Store" />
+    <None Include="wwwroot\dist\sb-admin\js\bootstrap.js" />
+    <None Include="wwwroot\dist\sb-admin\js\bootstrap.min.js" />
+    <None Include="wwwroot\dist\sb-admin\js\jquery.js" />
+    <None Include="wwwroot\dist\sb-admin\js\npm.js" />
+    <None Include="wwwroot\dist\sb-admin\js\plugins\flot\excanvas.min.js" />
+    <None Include="wwwroot\dist\sb-admin\js\plugins\flot\flot-data.js" />
+    <None Include="wwwroot\dist\sb-admin\js\plugins\flot\jquery.flot.js" />
+    <None Include="wwwroot\dist\sb-admin\js\plugins\flot\jquery.flot.pie.js" />
+    <None Include="wwwroot\dist\sb-admin\js\plugins\flot\jquery.flot.resize.js" />
+    <None Include="wwwroot\dist\sb-admin\js\plugins\flot\jquery.flot.tooltip.min.js" />
+    <None Include="wwwroot\dist\sb-admin\js\plugins\morris\morris-data.js" />
+    <None Include="wwwroot\dist\sb-admin\js\plugins\morris\morris.js" />
+    <None Include="wwwroot\dist\sb-admin\js\plugins\morris\morris.min.js" />
+    <None Include="wwwroot\dist\sb-admin\js\plugins\morris\raphael.min.js" />
+    <None Include="wwwroot\dist\sb-admin\js\umd\.DS_Store" />
+    <None Include="wwwroot\dist\sb-admin\js\umd\alert.js" />
+    <None Include="wwwroot\dist\sb-admin\js\umd\button.js" />
+    <None Include="wwwroot\dist\sb-admin\js\umd\carousel.js" />
+    <None Include="wwwroot\dist\sb-admin\js\umd\collapse.js" />
+    <None Include="wwwroot\dist\sb-admin\js\umd\dropdown.js" />
+    <None Include="wwwroot\dist\sb-admin\js\umd\modal.js" />
+    <None Include="wwwroot\dist\sb-admin\js\umd\popover.js" />
+    <None Include="wwwroot\dist\sb-admin\js\umd\scrollspy.js" />
+    <None Include="wwwroot\dist\sb-admin\js\umd\tab.js" />
+    <None Include="wwwroot\dist\sb-admin\js\umd\tooltip.js" />
+    <None Include="wwwroot\dist\sb-admin\js\umd\util.js" />
+  </ItemGroup>
+
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">
     <!-- Ensure Node.js is installed -->
     <Exec Command="node --version" ContinueOnError="true">
